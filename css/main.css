@@ -1,0 +1,660 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+form,
+footer,
+header,
+menu,
+nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+	
+/* Smartphones (portrait & landscape) */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 679px) {
+
+	header {
+		background-color: #DA5032;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 50px;
+	}
+
+	header h1 {
+		display: flex;
+   		justify-content: center;
+   		align-items: center;
+		color: white;
+		text-shadow: 2px #02010a;
+		text-align: left;
+		margin-left: 10px; 
+		margin-right: 10px;
+		font-family: "Love Ya Like A Sister";
+	}
+
+	header nav {
+		display: flex;
+   		justify-content: center;
+   		align-items: center;
+	}
+
+	header ul{
+		list-style-type: none;
+		text-align: center;
+		display: flex; 
+		flex-direction: row;
+	}
+
+	li {
+		margin-left: 20px;
+		font-size: 1.3em;
+	}
+
+	li a {
+		text-decoration: none;
+		color: white;
+	}
+
+	.principal {
+		background-image: url("../images/paisaje.jpg");
+		width: 100%;
+		height: 200px;
+		background-size: cover;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+		background-repeat: no-repeat;
+		text-align: center;
+	}
+
+	.principal .contenido {
+		padding-top: 50px;
+		padding-left: auto;
+		padding-right: auto;
+		text-align: center;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.middle-tittle {
+		background-color: #D2D3CE;
+		border-radius: 10px;
+		padding: 5px;
+		opacity: 0.7;
+  		filter: alpha(opacity=20);
+	}
+
+	.principal .contenido h2 {
+		font-family: "Love Ya Like A Sister";
+	}
+
+	#playa .contenido, #parque .contenido, #rio .contenido {
+		display: block;
+   		justify-content: center;
+   		align-items: center;
+   		margin-top: 40px;
+	}
+
+	#rio .contenido {
+		padding-bottom: 40px;
+	}
+
+	#playa .imagen-principal, #parque .imagen-principal, #rio .imagen-principal {
+		display: none;
+	}
+
+	#playa .imagen-secundaria, #parque .imagen-secundaria, #rio .imagen-secundaria {
+		width: 100%;
+		display: flex;
+   		justify-content: center;
+	}
+
+	#playa .imagen-secundaria img, #parque .imagen-secundaria img, #rio .imagen-secundaria img {
+		border-radius: 10px;
+	}
+
+	.descripcion {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.descripcion h2 {
+		font-size: 80px;
+		font-family: "Love Ya Like A Sister";
+	}
+
+	main {
+		background-color: #DBD9F3;
+		background-size: cover;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	footer {
+		display: block;
+   		justify-content: center;
+   		align-items: center;
+   		margin-bottom: 30px;
+	}
+
+	footer .informacion {
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	footer .contacto {
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+		text-align: center;
+	}
+
+	footer .contacto #formulario {
+		width: 100%;
+		background-color: #DBD9F3;
+		text-align: left;
+		margin-top: 30px;
+		border-radius: 10px;
+		border-style: solid;
+		border-width: 0.5px;
+	}
+
+	footer .contacto h3 {
+		padding-top: 10px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	footer .contacto form {
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	form p {
+		padding-bottom: 5px;
+		padding-top: 5px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	form p button {
+		width: 15%;
+	}
+
+	p, a, label {
+		font-family: 'DM Serif Text';
+	}
+
+	button {
+		background-color: #4CAF50;
+		border-radius: 8px;
+		color: white;
+		padding: 3px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-family: 'DM Serif Text';
+	}
+
+	.imagen-principal, .imagen-secundaria {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+	
+	.imagen-principal:hover, .imagen-secundaria:hover {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+}
+
+/* iPads (portrait & landscape) */
+@media screen 
+and (min-device-width : 680px)
+and (max-device-width: 1023px) {
+
+	header {
+		background-color: #DA5032;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 50px;
+	}
+
+	header h1 {
+		display: flex;
+   		justify-content: center;
+   		align-items: center;
+		color: white;
+		text-shadow: 2px #02010a;
+		text-align: left;
+		margin-left: 10px; 
+		margin-right: 10px;
+		font-family: "Love Ya Like A Sister";
+	}
+
+	header nav {
+		display: flex;
+   		justify-content: center;
+   		align-items: center;
+	}
+
+	header ul{
+		list-style-type: none;
+		text-align: center;
+		display: flex; 
+		flex-direction: row;
+	}
+
+	li {
+		margin-left: 20px;
+		font-size: 1.3em;
+	}
+
+	li a {
+		text-decoration: none;
+		color: white;
+	}
+
+	.principal {
+		background-image: url("../images/paisaje.jpg");
+		width: 100%;
+		height: 300px;
+		background-size: cover;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+		background-repeat: no-repeat;
+		text-align: center;
+	}
+
+	.principal .contenido {
+		padding-top: 50px;
+		padding-left: auto;
+		padding-right: auto;
+		text-align: center;
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.middle-tittle {
+		background-color: #D2D3CE;
+		border-radius: 10px;
+		padding: 5px;
+		opacity: 0.7;
+  		filter: alpha(opacity=20);
+	}
+
+	.principal .contenido h2 {
+		font-family: "Love Ya Like A Sister";
+	}
+
+	#playa .contenido, #parque .contenido, #rio .contenido {
+		display: flex;
+   		justify-content: center;
+   		align-items: center;
+   		margin-top: 40px;
+	}
+
+	#rio .contenido {
+		padding-bottom: 40px;
+	}
+
+	#playa .imagen-principal, #parque .imagen-principal, #rio .imagen-principal {
+		display: none;
+	}
+
+	#playa .imagen-secundaria, #parque .imagen-secundaria, #rio .imagen-secundaria {
+		width: 50%;
+		display: flex;
+   		justify-content: center;
+	}
+
+	#playa .imagen-secundaria img, #parque .imagen-secundaria img, #rio .imagen-secundaria img {
+		border-radius: 10px;
+	}
+
+	.descripcion {
+		width: 50%;
+		text-align: center;
+	}
+
+	.descripcion h2 {
+		font-size: 80px;
+		font-family: "Love Ya Like A Sister";
+	}
+
+	main {
+		background-color: #DBD9F3;
+		background-size: cover;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	footer {
+		display: flex;
+   		justify-content: center;
+   		align-items: center;
+   		margin-bottom: 30px;
+	}
+
+	footer .informacion {
+		width: 50%;
+		text-align: left;
+		padding-left: 100px;
+	}
+
+	footer .contacto {
+		width: 50%;
+		text-align: center;
+		padding-right: 100px;
+	}
+
+	footer .contacto #formulario {
+		width: 100%;
+		background-color: #DBD9F3;
+		margin-left: auto;
+		margin-right: 0;
+		text-align: left;
+		padding-left: auto;
+		padding-right: 0;
+		margin-top: 30px;
+		border-radius: 10px;
+		border-style: solid;
+		border-width: 0.5px;
+	}
+
+	footer .contacto h3 {
+		padding-top: 10px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	footer .contacto form {
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	form p {
+		padding-bottom: 5px;
+		padding-top: 5px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	form p button {
+		width: 15%;
+	}
+
+	p, a, label {
+		font-family: 'DM Serif Text';
+	}
+
+	button {
+		background-color: #4CAF50;
+		border-radius: 8px;
+		color: white;
+		padding: 3px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-family: 'DM Serif Text';
+	}
+
+	.imagen-principal, .imagen-secundaria {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+	
+	.imagen-principal:hover, .imagen-secundaria:hover {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+}
+
+/* Desktops (portrait & landscape) */
+@media screen 
+and (min-device-width: 1024px) {
+
+	header {
+		background-color: #DA5032;
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 50px;
+	}
+
+	header h1 {
+		display: flex;
+   		justify-content: center;
+   		align-items: center;
+		color: white;
+		text-shadow: 2px #02010a;
+		text-align: left;
+		margin-left: 10px; 
+		margin-right: 10px;
+		font-family: "Love Ya Like A Sister";
+	}
+
+	header nav {
+		display: flex;
+   		justify-content: center;
+   		align-items: center;
+	}
+
+	header ul{
+		list-style-type: none;
+		text-align: center;
+		display: flex; 
+		flex-direction: row;
+	}
+
+	li {
+		margin-left: 20px;
+		font-size: 1.3em;
+	}
+
+	li a {
+		text-decoration: none;
+		color: white;
+	}
+
+	.principal {
+		background-image: url("../images/paisaje.jpg");
+		width: 100%;
+		height: 500px;
+		background-size: cover;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+		background-repeat: no-repeat;
+		text-align: center;
+	}
+
+	.principal .contenido {
+		padding-top: 50px;
+		padding-left: auto;
+		padding-right: auto;
+		text-align: center;
+		width: 30%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.middle-tittle {
+		background-color: #D2D3CE;
+		border-radius: 10px;
+		padding: 5px;
+		opacity: 0.7;
+  		filter: alpha(opacity=20);
+	}
+
+	.principal .contenido h2 {
+		font-family: "Love Ya Like A Sister";
+	}
+
+	#playa .contenido, #parque .contenido, #rio .contenido {
+		display: flex;
+   		justify-content: center;
+   		align-items: center;
+   		margin-top: 40px;
+	}
+
+	#rio .contenido {
+		padding-bottom: 40px;
+	}
+
+	#playa .imagen-principal, #playa .imagen-secundaria, #parque .imagen-principal, #parque .imagen-secundaria, #rio .imagen-principal, #rio .imagen-secundaria {
+		width: 35%;
+		display: flex;
+   		justify-content: center;
+	}
+
+	#playa .imagen-principal img, #playa .imagen-secundaria img, #parque .imagen-principal img, #parque .imagen-secundaria img, #rio .imagen-principal img, #rio .imagen-secundaria img {
+		border-radius: 10px;
+	}
+
+	.descripcion {
+		width: 30%;
+		text-align: center;
+	}
+
+	.descripcion h2 {
+		font-size: 80px;
+		font-family: "Love Ya Like A Sister";
+	}
+
+	main {
+		background-color: #DBD9F3;
+		background-size: cover;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	footer {
+		display: flex;
+   		justify-content: center;
+   		align-items: center;
+   		margin-bottom: 30px;
+	}
+
+	footer .informacion {
+		width: 50%;
+		text-align: left;
+		padding-left: 100px;
+	}
+
+	footer .contacto {
+		width: 50%;
+		text-align: center;
+		padding-right: 100px;
+	}
+
+	footer .contacto #formulario {
+		width: 80%;
+		background-color: #DBD9F3;
+		margin-left: auto;
+		margin-right: 0;
+		text-align: left;
+		padding-left: auto;
+		padding-right: 0;
+		margin-top: 30px;
+		border-radius: 10px;
+		border-style: solid;
+		border-width: 0.5px;
+	}
+
+	footer .contacto h3 {
+		padding-top: 10px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	footer .contacto form {
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	form p {
+		padding-bottom: 5px;
+		padding-top: 5px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	form p button {
+		width: 15%;
+	}
+
+	p, a, label {
+		font-family: 'DM Serif Text';
+	}
+
+	button {
+		background-color: #4CAF50;
+		border-radius: 8px;
+		color: white;
+		padding: 3px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-family: 'DM Serif Text';
+	}
+
+	.imagen-principal, .imagen-secundaria {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+	
+	.imagen-principal:hover, .imagen-secundaria:hover {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+
+}
